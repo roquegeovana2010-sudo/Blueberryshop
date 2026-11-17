@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Conheça a Blueberryshop: chaveiros artesanais feitos com carinho, criatividade e personalidade."
+    >
+
+    <meta name="theme-color" content="#dceeff">
+
+    <title>Blueberryshop | Feito com carinho</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+
+            <a class="marca" href="#inicio" aria-label="Blueberryshop - Página inicial">
+                <img
+                    src="imagens/logo.png"
+                    data-image-base="imagens/logo"
+                    data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                    alt="Logotipo original da Blueberryshop"
+                    class="logo"
+                >
+                <span class="marca-texto">Blueberryshop</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#precos">Preços</a>
+                <a href="#encomendas">Encomendas</a>
+                <a href="#contato" class="menu-destaque">Fale conosco</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Página inicial -->
+        <section class="hero" id="inicio">
+            <div class="container hero-conteudo">
+
+                <div class="hero-texto">
+                    <span class="etiqueta">♡ Pequenos detalhes, grandes carinhos ♡</span>
+
+                    <h1>
+                        Um mundo de fofura
+                        <span>feito à mão!</span>
+                    </h1>
+
+                    <p>
+                        Bem-vindo à Blueberryshop! Aqui, cada peça é uma
+                        pequena demonstração de criatividade, carinho e
+                        amor pelo artesanato.
+                    </p>
+
+                    <div class="hero-botoes">
+                        <a class="botao botao-principal" href="#produtos">
+                            Conheça nossos produtos
+                        </a>
+
+                        <a class="botao botao-secundario" href="#sobre">
+                            Nossa história
+                        </a>
+                    </div>
+
+                    <div class="hero-detalhes">
+                        <span>✿ Feito com carinho</span>
+                        <span>♡ Peças criativas</span>
+                    </div>
+                </div>
+
+                <div class="hero-imagem">
+                    <div class="hero-imagem-moldura">
+                        <img
+                            src="imagens/logo.png"
+                            data-image-base="imagens/chaveiros"
+                            data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                            alt="Fotografia de vários chaveiros artesanais da Blueberryshop"
+                            class="imagem-destaque"
+                        >
+                    </div>
+
+                    <span class="decoracao decoracao-um" aria-hidden="true">✿</span>
+                    <span class="decoracao decoracao-dois" aria-hidden="true">♡</span>
+                    <span class="decoracao decoracao-tres" aria-hidden="true">✧</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sobre a loja -->
+        <section class="secao sobre" id="sobre">
+            <div class="container sobre-conteudo">
+
+                <div class="sobre-imagem">
+                    <img
+                        src="imagens/chaveiros-tres.jpg"
+                        data-image-base="imagens/chaveiros"
+                        data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                        alt="Coleção de chaveiros artesanais da loja"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="sobre-texto">
+                    <span class="subtitulo">Um pouquinho sobre nós</span>
+
+                    <h2>Mais do que artesanato, carinho em cada detalhe!</h2>
+
+                    <p>
+                        A Blueberryshop nasceu da vontade de transformar
+                        ideias criativas em peças especiais. Nosso objetivo
+                        é oferecer produtos artesanais cheios de personalidade,
+                        delicadeza e originalidade.
+                    </p>
+
+                    <p>
+                        Cada modelo tem seu charme e torna o dia a dia mais
+                        colorido. Queremos que você encontre uma peça que
+                        combine com seu estilo ou que seja perfeita para
+                        presentear alguém especial.
+                    </p>
+
+                    <a class="link-decorado" href="#produtos">
+                        Descubra nossa coleção <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Produtos -->
+        <section class="secao produtos" id="produtos">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <span class="subtitulo">Nossa coleção</span>
+                    <h2>Peças que encantam</h2>
+                    <p>
+                        Confira os modelos artesanais disponíveis na
+                        nossa coleção.
+                    </p>
+                </div>
+
+                <div class="filtros" role="group" aria-label="Filtrar produtos">
+                    <button
+                        class="filtro ativo"
+                        type="button"
+                        data-filter="todos"
+                        aria-pressed="true"
+                    >
+                        Todos os produtos
+                    </button>
+
+                    <button
+                        class="filtro"
+                        type="button"
+                        data-filter="chaveiros"
+                        aria-pressed="false"
+                    >
+                        Chaveiros
+                    </button>
+
+                    <button
+                        class="filtro"
+                        type="button"
+                        data-filter="outros"
+                        aria-pressed="false"
+                    >
+                        Outras peças
+                    </button>
+                </div>
+
+                <div class="grade-produtos">
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro de cavalo"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/cavalo.jpg"
+                                data-image-base="imagens/cavalo"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal de cavalo"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro de Cavalo</h3>
+                            <p>
+                                Um modelo especial para quem gosta de cavalos
+                                e peças criativas.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro cowboy"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/cowboy.jpg"
+                                data-image-base="imagens/cowboy"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal de personagem cowboy"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro Cowboy</h3>
+                            <p>
+                                Um chaveiro de personagem com um estilo
+                                divertido e marcante.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro de flor rosa"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/flor-rosa.jpg"
+                                data-image-base="imagens/flor-rosa"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal de flor rosa"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro Flor Rosa</h3>
+                            <p>
+                                Uma peça floral delicada para adicionar
+                                cor aos seus acessórios.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro de leão"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/leao.jpg"
+                                data-image-base="imagens/leao"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal de leão"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro de Leão</h3>
+                            <p>
+                                Um modelo inspirado no leão, perfeito para
+                                quem gosta de personagens marcantes.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro Noob"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/noob.jpg"
+                                data-image-base="imagens/noob"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal do personagem Noob"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro girassol</h3>
+                            <p>
+                                Um chaveiro de personagem para quem gosta
+                                de modelos diferentes.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar a segunda foto da personagem pinkie pie"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/pinkie pie.jpeg"
+                                data-image-base="imagens/pinkie pie"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Outra fotografia do chaveiro artesanal da personagem pinkie pie"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Pinkie pie</h3>
+                            <p>
+                                Outra fotografia da personagem Pinkie pie para
+                                você conhecer a coleção.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card" data-category="chaveiros">
+                        <button
+                            class="produto-imagem produto-expandir"
+                            type="button"
+                            aria-label="Destacar foto do chaveiro de pintinho"
+                            aria-pressed="false"
+                        >
+                            <img
+                                src="imagens/pintinho.jpg"
+                                data-image-base="imagens/pintinho"
+                                data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                                alt="Chaveiro artesanal de pintinho"
+                                loading="lazy"
+                            >
+                        </button>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Chaveiro artesanal</span>
+                            <h3>Chaveiro de Pintinho</h3>
+                            <p>
+                                Um modelo inspirado em um pintinho, com
+                                todo o charme do artesanato.
+                            </p>
+                            <a class="produto-link" href="#encomendas">
+                                Consultar preço <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card produto-em-breve" data-category="outros">
+                        <div class="em-breve-ilustracao" aria-hidden="true">
+                            <svg viewBox="0 0 100 100" role="img" aria-label="">
+                                <path
+                                    d="M50 12 L82 30 L82 68 L50 88 L18 68 L18 30 Z"
+                                    fill="#e7f2ff"
+                                    stroke="#8c9fd0"
+                                    stroke-width="2"
+                                />
+                                <path
+                                    d="M50 29 L55 43 L70 43 L58 52 L63 67 L50 58 L37 67 L42 52 L30 43 L45 43 Z"
+                                    fill="#8c9fd0"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="produto-info">
+                            <span class="produto-categoria">Novidades futuras</span>
+                            <h3>Outras peças artesanais</h3>
+                            <p>
+                                A categoria poderá receber ímãs, figuras
+                                decorativas e outras criações quando
+                                estiverem disponíveis.
+                            </p>
+                            <span class="indisponivel">Novidades em breve</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="nota-catalogo">
+                    As fotografias dos produtos são as imagens da coleção
+                    fornecidas para o projeto. Consulte a disponibilidade
+                    e o valor de cada modelo antes de encomendar.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Preços -->
+        <section class="secao precos" id="precos">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <span class="subtitulo">Valores de referência</span>
+                    <h2>Um carinho para cada bolso</h2>
+                    <p>
+                        Confira os preços de referência por tamanho.
+                    </p>
+                </div>
+
+                <div class="grade-precos">
+
+                    <article class="preco-card">
+                        <div class="preco-icone" aria-hidden="true">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" fill="#e8f2ff"/>
+                                <circle cx="32" cy="32" r="14" fill="none" stroke="#718bc4" stroke-width="2.5"/>
+                                <circle cx="32" cy="32" r="4" fill="#718bc4"/>
+                            </svg>
+                        </div>
+                        <h3>Pequeno</h3>
+                        <p class="preco-valor">R$ 2,00</p>
+                        <p>Referência para peças pequenas.</p>
+                    </article>
+
+                    <article class="preco-card preco-card-destaque">
+                        <span class="preco-etiqueta">Tamanho médio</span>
+                        <div class="preco-icone" aria-hidden="true">
+                            <svg viewBox="0 0 64 64">
+                                <rect x="9" y="9" width="46" height="46" rx="14" fill="#e7e6ff"/>
+                                <path d="M32 18 L36 27 L46 28 L39 35 L41 45 L32 40 L23 45 L25 35 L18 28 L28 27 Z" fill="#8580c5"/>
+                            </svg>
+                        </div>
+                        <h3>Médio</h3>
+                        <p class="preco-valor">R$ 4,00</p>
+                        <p>Referência para peças médias.</p>
+                    </article>
+
+                    <article class="preco-card">
+                        <div class="preco-icone" aria-hidden="true">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M32 5 L58 20 L58 44 L32 59 L6 44 L6 20 Z" fill="#e5f4e7"/>
+                                <path d="M32 17 L35 27 L46 27 L37 34 L41 45 L32 38 L23 45 L27 34 L18 27 L29 27 Z" fill="#83b28a"/>
+                            </svg>
+                        </div>
+                        <h3>Grande</h3>
+                        <p class="preco-valor">R$ 6,00</p>
+                        <p>Referência para peças grandes.</p>
+                    </article>
+
+                </div>
+
+                <div class="aviso-precos">
+                    <span class="aviso-icone" aria-hidden="true">i</span>
+                    <p>
+                        <strong>Importante:</strong> estes são valores de
+                        referência. O preço pode variar conforme o modelo,
+                        o tamanho e os detalhes da peça. Consulte o valor
+                        atualizado antes de fazer sua encomenda.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Outras peças -->
+        <section class="secao outras-pecas" id="outras-pecas">
+            <div class="container outras-conteudo">
+
+                <div>
+                    <span class="subtitulo">Além dos chaveiros</span>
+                    <h2>Mais ideias criativas podem chegar por aqui!</h2>
+                </div>
+
+                <p>
+                    A Blueberryshop também poderá apresentar ímãs,
+                    figuras decorativas e outras peças artesanais.
+                    Esta categoria será atualizada quando houver
+                    fotografias reais desses produtos disponíveis.
+                </p>
+
+                <a class="botao botao-principal" href="#contato">
+                    Pergunte sobre novidades
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Encomendas -->
+        <section class="secao encomendas" id="encomendas">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <span class="subtitulo">É simples e fácil</span>
+                    <h2>Como fazer sua encomenda?</h2>
+                    <p>
+                        Siga estes passos para consultar um produto.
+                    </p>
+                </div>
+
+                <div class="grade-passos">
+
+                    <article class="passo-card">
+                        <span class="passo-numero">01</span>
+                        <h3>Escolha sua peça</h3>
+                        <p>
+                            Explore o catálogo e escolha o modelo que
+                            mais combina com você.
+                        </p>
+                    </article>
+
+                    <article class="passo-card">
+                        <span class="passo-numero">02</span>
+                        <h3>Entre em contato</h3>
+                        <p>
+                            Fale conosco pelo Instagram para consultar
+                            disponibilidade, tamanho e preço.
+                        </p>
+                    </article>
+
+                    <article class="passo-card">
+                        <span class="passo-numero">03</span>
+                        <h3>Combine os detalhes</h3>
+                        <p>
+                            Confirme o modelo, o valor e os demais
+                            detalhes diretamente com a loja.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="encomenda-cta">
+                    <div>
+                        <h3>Encontrou seu favorito?</h3>
+                        <p>Vamos conversar sobre sua próxima peça artesanal!</p>
+                    </div>
+
+                    <button class="botao botao-principal" type="button" data-whatsapp>
+                        Consultar pelo Instagram
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="secao contato" id="contato">
+            <div class="container contato-conteudo">
+
+                <div class="contato-texto">
+                    <span class="subtitulo">Vamos conversar?</span>
+                    <h2>Seu próximo mimo pode estar aqui!</h2>
+                    <p>
+                        Ficou com alguma dúvida ou quer saber mais sobre
+                        um modelo? Entre em contato para consultar
+                        os detalhes da sua encomenda.
+                    </p>
+
+                    <button class="botao botao-branco" type="button" data-whatsapp>
+                        Falar com a Blueberryshop
+                    </button>
+                </div>
+
+                <div class="contato-detalhe" aria-hidden="true">
+                    <svg viewBox="0 0 180 180">
+                        <path d="M90 28 C60 2 22 28 36 62 C45 83 70 100 90 117 C110 100 135 83 144 62 C158 28 120 2 90 28 Z" fill="#ffffff" opacity=".92"/>
+                        <path d="M90 42 C71 24 49 42 58 60 C64 73 79 84 90 94 C101 84 116 73 122 60 C131 42 109 24 90 42 Z" fill="#a5a0e5"/>
+                        <path d="M90 120 L90 148 M76 134 L104 134" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+
+            <a class="marca marca-rodape" href="#inicio">
+                <img
+                    src="imagens/logo.png"
+                    data-image-base="imagens/logo"
+                    data-image-extensions=".png,.jpg,.jpeg,.webp,.avif,.gif,.jfif"
+                    alt="Logotipo da Blueberryshop"
+                    class="logo logo-rodape"
+                    loading="lazy"
+                >
+                <span class="marca-texto">Blueberryshop</span>
+            </a>
+
+            <p class="rodape-frase">
+                Feito à mão, pensado com carinho. ♡
+            </p>
+
+            <nav class="rodape-links" aria-label="Links do rodapé">
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#precos">Preços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <p class="copyright">
+                © <span id="ano-atual"></span> Blueberryshop.
+                Projeto escolar de Programação de Computadores.
+            </p>
+
+        </div>
+    </footer>
+
+    <button
+        class="voltar-topo"
+        id="voltar-topo"
+        type="button"
+        aria-label="Voltar ao início da página"
+        title="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+</body>
+</html>
